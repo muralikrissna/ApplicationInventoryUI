@@ -1,0 +1,2 @@
+# ApplicationInventoryUI
+Application Inventory
