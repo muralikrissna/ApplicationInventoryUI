@@ -1,4 +1,4 @@
-<div class="example-container" [class.example-is-mobile]="mobileQuery.matches">
+<!-- <div class="example-container" [class.example-is-mobile]="mobileQuery.matches">
     <mat-toolbar color="primary" class="example-toolbar">
       <button mat-icon-button (click)="snav.toggle()"><mat-icon>menu</mat-icon></button>
       <h1 class="example-app-name">Data Collection Application</h1>
@@ -20,4 +20,47 @@
         <router-outlet></router-outlet>
       </mat-sidenav-content>
     </mat-sidenav-container>
+</div> -->
+<div class="boxstyle">
+<mat-accordion>
+  <mat-expansion-panel (opened)="panelOpenState = true"
+                       (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Application panel
+      </mat-panel-title>
+      <mat-panel-description>
+        Capture of Application Details
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <!-- <p>I'm visible because I am open</p> -->
+    <mat-card>
+      <mat-tab-group mat-align-tabs="start">
+          <mat-tab label="Add Application"><app-add-application-details></app-add-application-details></mat-tab>
+          <mat-tab label="View Applications">Applications list here..</mat-tab>
+      </mat-tab-group>
+  </mat-card>
+  </mat-expansion-panel>
+  <mat-expansion-panel hideToggle>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Department Panel
+      </mat-panel-title>
+      <mat-panel-description>
+        Capture of Department details
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <mat-card>
+      <mat-tab-group mat-align-tabs="start">
+          <mat-tab label="Add Department"><app-add-dept-details></app-add-dept-details></mat-tab>
+          <mat-tab label="View Departments">Departments list here..</mat-tab>
+      </mat-tab-group>
+  </mat-card>
+  </mat-expansion-panel>
+  
+</mat-accordion>
+<!-- <div class="example-button-row">
+  <button mat-raised-button color="primary">Save</button> 
+  <button mat-raised-button>Cancel</button>
+</div> -->
 </div>

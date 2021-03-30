@@ -29,4 +29,17 @@
        `<body>` to be our scrolling element for mobile layouts. */
     flex: 1 0 auto;
   }
+  .mat-form-field + .mat-form-field {
+    margin-left: 8px;
+  }
+  .mat-expansion-panel-header.mat-expanded,.mat-expansion-panel-header.mat-expanded:hover {
+  background: lightgreen;
+  }
+  boxstyle {
+    border: 10px solid black;
+    outline: #4CAF50 solid 10px;
+    margin: auto;  
+    padding: 20px;
+    text-align: center;
+  }
   
